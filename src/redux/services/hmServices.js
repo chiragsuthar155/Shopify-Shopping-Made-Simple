@@ -1,14 +1,10 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
-
 export const hmServicesApi = createApi({
   reducerPath: "hmServicesApi",
   baseQuery: fetchBaseQuery({
     baseUrl: "https://apidojo-hm-hennes-mauritz-v1.p.rapidapi.com",
     prepareHeaders: (headers) => {
-      headers.set(
-        "X-RapidAPI-Key",
-        "70aa10fe1emsh9d0b4967d99c4f3p1be847jsn3e79250c4ebc"
-      );
+      headers.set("X-RapidAPI-Key", process.env.REACT_APP_RAPID_API_HM_KEY);
       return headers;
     },
   }),

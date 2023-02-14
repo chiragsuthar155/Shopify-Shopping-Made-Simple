@@ -2,7 +2,6 @@ import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import cartGif from "../assets/empty-cart.gif";
 import { remove } from "../redux/cartSlice";
-import { Link } from "react-router-dom";
 export default function Cart() {
   const items = useSelector((state) => state.cart);
   const dispatch = useDispatch();
