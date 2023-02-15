@@ -5,6 +5,7 @@ import { AppBar, CssBaseline, TextField } from "@material-ui/core";
 import { InputAdornment } from "@mui/material";
 import { Link } from "react-router-dom";
 import logo from "../assets/logo.jpg";
+import user from "../assets/user.gif";
 
 export default function Navbar() {
   // useSelector helps us to get the data from the store (It works as subscribe model , means we will get the data as soon as the data in the store changes)
@@ -45,18 +46,25 @@ export default function Navbar() {
             ),
           }}
         />
-        <Link to="/cart">
-          <div className="font-bold relative text-lg flex flex-row ">
+        <div className="font-bold relative text-lg flex flex-row ">
+          <Link to="/login">
             <img
-              className="w-6 md:w-11"
+              className="w-6 cursor-pointer mr-4 md:w-10"
+              src={user}
+              alt="Login/Signup"
+            />
+          </Link>
+          <Link to="/cart">
+            <img
+              className="w-6 md:w-10"
               src="https://img.icons8.com/parakeet/96/null/shopping-cart.png"
               alt="Shopping Cart"
             />{" "}
-            <h1 className="absolute top-0 font-light flex flex-row justify-center items-center right-0 bg-red-500 w-6 text-gray-50 text-center h-6 rounded-full">
+            <h1 className="absolute top-0 font-light flex flex-row justify-center items-center right-0 bg-red-500 w-5 text-gray-50 text-center h-5 text-md rounded-full">
               {cartItems}
             </h1>
-          </div>
-        </Link>
+          </Link>
+        </div>
       </AppBar>
     </>
   );

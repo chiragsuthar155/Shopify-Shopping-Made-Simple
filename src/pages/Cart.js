@@ -9,7 +9,7 @@ export default function Cart() {
     dispatch(remove(productId));
   };
   return (
-    <div className="flex flex-row flex-wrap  md:gap-10 gap-8 pt-24 bg-[#ffc904] justify-center">
+    <div className="flex flex-row flex-wrap h-screen  md:gap-10 gap-8 pt-24 bg-[#ffc904] justify-center">
       {items.length === 0 ? (
         <div className="flex flex-col justify-center items-center">
           <img src={cartGif} alt="Cart Image" />
@@ -19,7 +19,7 @@ export default function Cart() {
         items.map((item, i) => (
           <div
             key={i}
-            className="flex flex-row justify-start px-3 sm:px-5 md:px-10  pt-0  bg-white items-center w-full border cursor-pointer"
+            className="flex flex-row justify-start px-3 sm:px-5 md:px-10  pt-0 h-1/3  bg-white items-center w-full border cursor-pointer"
           >
             <img
               className="w-12 sm:w-16 md:w-32 "
