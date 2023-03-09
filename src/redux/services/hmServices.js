@@ -14,6 +14,10 @@ export const hmServicesApi = createApi({
       query: () =>
         "/products/list?country=us&lang=en&currentpage=0&pagesize=30&categories=men_all&concepts=H%26M%20MAN",
     }),
+    getWomenResults: builder.query({
+      query: () =>
+        "products/list?country=us&lang=en&currentpage=0&pagesize=30&categories=ladies_all",
+    }),
     getProductDetails: builder.query({
       query: ({ clothCode }) =>
         `/products/detail?lang=en&country=us&productcode=${clothCode}`,
@@ -21,5 +25,8 @@ export const hmServicesApi = createApi({
   }),
 });
 
-export const { useGetSearchResultsQuery, useGetProductDetailsQuery } =
-  hmServicesApi;
+export const {
+  useGetSearchResultsQuery,
+  useGetProductDetailsQuery,
+  useGetWomenResultsQuery,
+} = hmServicesApi;

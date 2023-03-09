@@ -9,17 +9,17 @@ export default function Cart() {
     dispatch(remove(productId));
   };
   return (
-    <div className="flex flex-row flex-wrap h-screen  md:gap-10 gap-8 pt-24 bg-[#ffc904] justify-center">
+    <div className="flex flex-row flex-wrap items-center pb-8 h-screen  md:gap-1 gap-1 pt-8 bg-[#ffc904] justify-center ml-64 ">
       {items.length === 0 ? (
         <div className="flex flex-col justify-center items-center">
-          <img src={cartGif} alt="Cart Image" />
+          {/* <img src={cartGif} alt="Cart Image" /> */}
           <h1 className="text-3xl font-bold mt-10">Your Cart is Empty</h1>
         </div>
       ) : (
         items.map((item, i) => (
           <div
             key={i}
-            className="flex flex-row justify-start px-3 sm:px-5 md:px-10  pt-0 h-1/3  bg-white items-center w-full border cursor-pointer"
+            className="flex flex-row justify-start px-3 sm:px-5 md:px-10  pt-0 w-5/6  bg-white items-center  cursor-pointer"
           >
             <img
               className="w-12 sm:w-16 md:w-32 "
@@ -29,7 +29,7 @@ export default function Cart() {
                   : item.galleryDetails[0].baseUrl
               }
             />
-            <h1 className="ml-4 md:ml-8 mr-3 font-lg text-md md:text-xl w-full  my-3 ">
+            <h1 className="ml-4 md:ml-8 mr-3 font-lg text-md md:text-xl   my-3 ">
               {item.name}
             </h1>
             <h1 className=" font-lg text-md md:text-xl w-32 my-3 ">

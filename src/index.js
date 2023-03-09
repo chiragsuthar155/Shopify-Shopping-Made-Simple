@@ -4,6 +4,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 import { Provider } from "react-redux";
 import App from "./App";
 import { store } from "./redux/store";
+import { Sidebar } from "./components/Sidebar";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

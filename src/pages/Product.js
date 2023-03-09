@@ -97,7 +97,7 @@ export default function Product() {
                 .find((item) => item.modelHeight)
                 .variantsList.map((item) => (
                   <h1
-                    className=" rounded-full h-10  w-10 flex flex-row justify-center font-medium border-2 text-md p-2 cursor-pointer hover:bg-green-300 transition-colors"
+                    className=" rounded-full h-10  w-10 flex flex-row justify-center font-medium border-2 text-md p-2 cursor-pointer hover:bg-yellow-400 transition-colors"
                     onClick={(e) => {
                       e.target.classList.add("bg-yellow-200");
                       e.target.classList.add("text-gray-50");
