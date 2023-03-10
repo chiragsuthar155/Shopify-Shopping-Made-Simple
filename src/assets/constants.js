@@ -22,4 +22,9 @@ export const links = [
     to: "inspiration",
     icon: "💎",
   },
+  {
+    name: "Copyright  | Chirag Suthar",
+    to: "Copyright",
+    icon: "🏆",
+  },
 ];

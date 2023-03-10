@@ -27,7 +27,7 @@ export const Sidebar = () => {
   console.log(links);
   return (
     <>
-      <div className="sidebar bg-white h-screen fixed top-0 left-0 w-1/3  px-10 py-8 ">
+      <div className="sidebar bg-white h-screen fixed top-0 left-0 w-1/3  px-8 py-8 ">
         <Link to="/">
           <div className="logo flex flex-row items-center w-52 mb-10">
             <img

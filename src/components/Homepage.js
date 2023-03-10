@@ -51,18 +51,22 @@ export default function Homepage() {
           </div>
         </div>
 
-        <div className="photo-grid ml-0 mr-8 lg:ml-72 text-2xl py-10">
-          <div className="card card-wide bg-[url('https://images.unsplash.com/photo-1601430854328-26d0d524344a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTk0fHxjYXJ0b29uJTIwaWNvbnN8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=570&q=60')]">
-            <p className="font-black">GET UP TO 50% OFF</p>
+        <div className="photo-grid ml-0  md:mr-8 lg:ml-72 text-2xl py-10">
+          <div className="card relative card-wide bg-[url('https://images.unsplash.com/photo-1601430854328-26d0d524344a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTk0fHxjYXJ0b29uJTIwaWNvbnN8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=570&q=60')]">
+            <p className="font-black absolute right-16">GET UP TO 50% OFF</p>
           </div>
-          <div className="card card-tall lg:card-wide  bg-[url('https://images.unsplash.com/photo-1543087903-1ac2ec7aa8c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTI1fHxjbG90aGVzJTIwYmFubmVyfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=570&q=60')]">
-            <p className="font-black text-black">Summer Deals</p>
+          <div className="card card-tall relative lg:card-wide  bg-[url('https://images.unsplash.com/photo-1543087903-1ac2ec7aa8c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTI1fHxjbG90aGVzJTIwYmFubmVyfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=570&q=60')]">
+            <p className="font-black absolute top-3 right-3 ">Summer Deals</p>
           </div>
-          <div className="card card-tall  bg-[url('https://images.unsplash.com/photo-1491553895911-0055eca6402d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fHNob2VzJTIwYmFubmVyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60')]">
-            <p className="font-black text-black">Sneaky Sneakers</p>
+          <div className="card card-tall relative  bg-[url('https://images.unsplash.com/photo-1491553895911-0055eca6402d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fHNob2VzJTIwYmFubmVyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60')]">
+            <p className="font-black absolute bottom-8 text-black">
+              Sneaky Sneakers
+            </p>
           </div>
-          <div className="card card-tall bg-[url('https://images.unsplash.com/photo-1543163521-1bf539c55dd2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80')]">
-            <p className="font-black text-black">Woman Sandals</p>
+          <div className="card relative card-tall bg-[url('https://images.unsplash.com/photo-1543163521-1bf539c55dd2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80')]">
+            <p className="font-black absolute bottom-8 text-black">
+              Woman Sandals
+            </p>
           </div>
           <div className="card  bg-[url('https://images.unsplash.com/photo-1513373319109-eb154073eb0b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=570&q=80')]">
             <p className="font-black pl-4 text-black ">
@@ -70,13 +74,15 @@ export default function Homepage() {
             </p>
           </div>
           <div className="card  bg-[url('https://images.unsplash.com/photo-1652427019217-3ded1a356f10?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80')]">
-            <p className="font-black text-black ">Flashy Bags</p>
+            <p className="font-black  ">Flashy Bags</p>
           </div>
           <div className="card bg-[url('https://images.unsplash.com/photo-1583846762363-5fc36ec494a2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80')]">
             <p className="font-black text-black ">Woman's Clothing</p>
           </div>
-          <div className="card card-wide md:card-tall bg-[url('https://images.unsplash.com/photo-1517865288-978fcb780652?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=465&q=80')]">
-            <p className="font-black  ">Men's Clothing</p>
+          <div className="card relative card-wide md:card-tall bg-[url('https://images.unsplash.com/photo-1517865288-978fcb780652?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=465&q=80')]">
+            <p className="font-black absolute top-3 right-3 text-black  ">
+              Men's Clothing
+            </p>
           </div>
         </div>
 

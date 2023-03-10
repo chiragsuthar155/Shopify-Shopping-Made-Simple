@@ -18,7 +18,7 @@ export default function App() {
     <>
       <div className="flex flex-row ">
         <Sidebar />
-        <div className="flex flex-col">
+        <div className="w-full">
           <Navbar />
           <Routes>
             <Route path="/" element={<Homepage />} />
