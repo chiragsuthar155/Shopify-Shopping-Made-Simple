@@ -22,6 +22,14 @@ export const hmServicesApi = createApi({
       query: ({ clothCode }) =>
         `/products/detail?lang=en&country=us&productcode=${clothCode}`,
     }),
+    getSportsWear: builder.query({
+      query: () =>
+        "products/list?country=us&lang=en&currentpage=0&pagesize=30&categories=sportswear",
+    }),
+    getBeautyProducts: builder.query({
+      query: () =>
+        "products/list?country=us&lang=en&currentpage=0&pagesize=30&categories=beauty_all",
+    }),
   }),
 });
 
@@ -29,4 +37,6 @@ export const {
   useGetSearchResultsQuery,
   useGetProductDetailsQuery,
   useGetWomenResultsQuery,
+  useGetSportsWearQuery,
+  useGetBeautyProductsQuery,
 } = hmServicesApi;

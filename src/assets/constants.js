@@ -3,13 +3,13 @@ export const links = [
   { name: "Clothing", to: "/clothing", icon: "🧥" },
   { name: "Shoes", to: "/shoes", icon: "👟" },
   {
-    name: "Accessories",
-    to: "/accessories",
-    icon: "💼",
+    name: "Beauty",
+    to: "/beauty_products",
+    icon: "💄",
   },
   {
-    name: "Activewear",
-    to: "/active-wear",
+    name: "Sportswear",
+    to: "/sportswear",
     icon: "🤸‍♂️",
   },
   {

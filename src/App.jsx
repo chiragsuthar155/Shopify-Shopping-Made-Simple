@@ -13,6 +13,8 @@ import { Contact } from "./pages/Contact";
 import { PrivacyPolicy } from "./pages/PrivacyPolicy";
 import { TermsConditions } from "./pages/TermsConditions";
 import { Sidebar } from "./components/Sidebar";
+import { Sportswear } from "./pages/Sportswear";
+import { BeautyProducts } from "./pages/BeautyProducts";
 export default function App() {
   return (
     <>
@@ -24,6 +26,9 @@ export default function App() {
             <Route path="/" element={<Homepage />} />
             <Route path="/cart" element={<Cart />} />
             <Route path="/clothes-details/:clothCode" element={<Product />} />
+            <Route path="/sportswear" element={<Sportswear />} />
+            <Route path="/beauty_products" element={<BeautyProducts />} />
+
             <Route path="/login" element={<Login />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
